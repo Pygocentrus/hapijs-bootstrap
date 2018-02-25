@@ -1,11 +1,12 @@
 {
-  "name": "artfiliation",
+  "name": "artfiliation_api",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start:dev": "node_modules/.bin/pm2 start index.js --watch --name=\"api\"",
-    "stop:dev": "node_modules/.bin/pm2 stop api"
+    "start": "node_modules/.bin/pm2 start index.js --watch --name=\"api\"",
+    "stop": "node_modules/.bin/pm2 stop api",
+    "logs": "node_modules/.bin/pm2 logs api"
   },
   "dependencies": {
     "boom": "^7.1.1",
@@ -16,6 +17,7 @@
   },
   "devDependencies": {
     "chai": "^4.1.2",
+    "eslint": "^4.18.1",
     "mocha": "^5.0.1",
     "sinon": "^4.4.1"
   }
