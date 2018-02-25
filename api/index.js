@@ -1,5 +1,8 @@
 const server = require('./src/server');
 const logger = require('./src/providers/logger');
+const config = require('./config');
+
+console.info(config);
 
 const port = process.env.PORT || 8000;
 const host = process.env.HOST || 'localhost';
